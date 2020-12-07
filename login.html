@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial-scale= 1.0">
+        <meta name="author" content="Lisa Mukoya Ochieng">
+        <meta name="description" content="Lorem ipsum dolor sit amet">
+<!--REMEMBER TO ADD DESCRIPTION AND THE KEYWORDS-->
+        <meta name= "keywords" content= "fun, html, learning">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Jura&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&family=Glegoo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <script src="https://use.fontawesome.com/cd04a64aae.js"></script>
+        <style>
+            
+#videoBG{
+    overflow: hidden;
+    position: fixed;
+    z-index: -2;
+    filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+}
+
+
+
+.login-box{
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 470px;
+    width: 400px;
+    border: solid 1.1px;
+    border-color:#fce0f450 ;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: rgba(0, 0, 0, 0.315);   
+}
+
+.overlay{
+    background-color:#0F1626 ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.login-box h1{
+    text-align: center;
+    color: white;
+    margin: 8px 0;
+    padding: 8px 0;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 8px;
+    font-size: 50px;
+    animation-name: loginfun;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loginfun{
+    0%{color: white;}
+    10%{color: rgb(110, 101, 98);}
+    50%{color: rgb(146, 118, 150);}
+    70%{color:rgb(177, 103, 158) ;}
+    80%{color:rgb(243, 119, 208);}
+    100%{color: rgb(158, 126, 149);}
+}
+
+.textbox{
+    width: 85%;
+    overflow: hidden;
+    font-size: 30px;
+    margin: 8px 0;
+    border-bottom: 1.1px solid  #FED7F3;
+    font-weight: lighter;
+    margin-bottom: 15px;
+    padding-left: 35px;
+    padding-right: 30px;
+    
+}
+
+.textbox input{
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    color: white;
+    height: 6vh;
+}
+
+.textbox:hover{
+    border-bottom: 1px #C1CFD7 solid;
+}
+
+  button[type="submit"] {
+    background-color: #E2DFE2;
+    color:black ;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 8px 0;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    align-content: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+    transition: 0.5s;
+
+  }
+
+  button[type="submit"]:hover{
+      color: white;
+      background:#C45AA6;
+  }
+
+.container{
+    color: #FED7F3;
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 30px;
+}
+
+.container input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0; 
+  width: 0;
+}
+
+.checkmark{
+  position: absolute;
+  top: 365px;
+  left: 20px;
+  height: 20px;
+  width: 20px;
+  background-color: #fce0f4;
+ 
+
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #b6c0e2;
+  }
+
+.container input:checked ~ .checkmark {
+    background-color: #95bed6;
+  }
+
+.checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~ .checkmark:after{
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    bottom: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(17, 12, 12);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+span a{
+    text-decoration: none;
+    float: right;
+    font-size: 18px;
+    color: #C1CFD7;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    transition: 0.8s;
+}
+
+span a:hover{
+    font-size:18.5px;
+    color: #A1AFE3;
+    border-bottom: solid 1px;
+    border-color: #E2DFE2;
+}
+
+::placeholder{
+    color: rgb(161, 156, 156);
+    font-size: 15.5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+input:focus::-webkit-input-placeholder {
+    color: rgb(255, 255, 255);
+}
+
+
+i{
+    color: white;
+    position: relative;
+    top: 40px;
+    padding-left: 10px;
+    size: 30px;
+}
+        </style>
+        <title>
+            Artaestia | About 
+        </title>
+    </head>
+ 
+    <body>
+        <header>
+            <nav id="navbar">
+                <h1>Artaestia</h1>
+    
+                <ul>
+           
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="login.html">Login </a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+    
+            </nav>
+        </header>
+    
+        <video id="videoBG" autoplay muted loop>
+            <source src="/milky.mov" type="video/mp4">
+        </video>
+
+       <form action="">
+           <div class="login-box">
+            
+                     <h1>Login</h1>
+                     
+                     <i class="fa fa-user" aria-hidden="true"></i>
+                <div class="textbox">
+                     <label for="uname">
+                        <input type="text" placeholder="Enter username or email" name="uname" required> 
+                    </label>
+                 </div>
+
+                 <i class="fa fa-lock" aria-hidden="true"></i>
+                 <div class="textbox">
+                     <label for="psw">
+                        <input type="password" placeholder="Enter password" name="psw" required>
+                     </label>
+                 </div>
+        
+                <button type="submit"> Login </button>
+
+                <div class="container">
+                <label>
+                    <input type="checkbox" checked="checked" name="remember">
+                     Remember me
+                     <span class="checkmark"></span>
+                </label>
+                </div>
+
+                     <span class="psw"><a href="#">Forgot password?</a></span>
+                
+
+           </div>
+            
+        </form>
+        
+        <div class="overlay"></div>
+
+
+    </body>
+</html>
