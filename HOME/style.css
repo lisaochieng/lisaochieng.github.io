@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #0F1626;
+    
+}
+
+#videoBG{
+    position: fixed;
+    z-index: -2;
+}
+
+
+
+
+.overlay{
+    background-color:#0e1524 ;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.75;
+    z-index: -1;
+    
+}
+
+
+#navbar{ 
+    background: #a28089;
+    width: 100%;
+    height: 66px;
+   
+    
+}
+
+header h1{
+  
+    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Jura', sans-serif;
+    font-weight: 100;
+    font-size: 200%;
+    margin-left: 2%;
+    margin-top: .8%;
+    display: inline-block;
+    
+}
+
+#navbar ul{
+    float: right;
+    margin-top: 0.3%;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+}
+
+#navbar ul li{
+    display: inline-block;
+    margin-top: 15px;
+}
+
+
+
+#navbar ul li a{
+    color: black;
+    text-decoration: none;
+    font-display: block;
+    font-size: 25px;
+    padding : 20px;
+}
+
+#navbar ul li a:hover{
+    background-color : #0F1626;
+    color: #C0B3A0;
+    transition: 0.7s;
+    animation-name: hovereffect;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    
+}
+
+@keyframes hovereffect{
+    
+    0%{background-color: #2a3658e8;}
+    100%{background-color: #0f1626 ;}
+
+    0%{color: white;}
+    100%{color: #C0B3A0;}
+
+}
+
+
+.container .main-title{
+    font-size: 200%;
+    text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: white;
+}
+
+.container{
+    margin-top: 20%;
+
+}
+
+span{ 
+    animation-name: Art;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.2s;
+}
+
+
+@keyframes Art{
+    0% {color: #e5eaf5;}
+    15% {color:#d0bdf4 ;}
+    25% {color: #8057ac;}
+    50% {color: #a28089;}
+    75% {color:#b89ea5 ;}
+    100%{color: #e6d5da;}
+   
+}
+
+blockquote{
+    position: relative;
+    margin-top: 5px;
+}
+
+.btn{
+    
+    margin-top: 40px;
+    font-size: 25px;
+    background: none;
+    border: solid;
+    border-color: white;
+    padding: 9.9px;
+    border-radius: 2em;
+    text-align: center;
+    margin-top: 5%;
+    position: relative;
+    
+    
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    display: block;
+}
+
+.btn:hover{
+    background-color: white;
+    transition: 0.9s;
+    border-radius: 1em;
+    font-size: 27px;
+    border-style: solid;
+}
+
+.btn a:hover{
+    color: black;
+    font-size: 33px;
+    transition: 0.6s;
+}
+
+span.btn1{
+margin-left: 35%;
+}
+
+span.btn2{
+margin-left: 10%;
+}
+
+.main-title h1{
+    animation-name: slidedown;
+    position: relative;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    
+    
+   
+}
+
+@keyframes slidedown{
+    from{ top: -250px;}
+    to{ top: 5px;}
+}
+
